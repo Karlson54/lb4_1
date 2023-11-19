@@ -1,20 +1,17 @@
 package com.example;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class AppTest {
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testIsPalindrome() {
+        assertTrue(App.isPalindrome("level"));
+        assertTrue(App.isPalindrome("A man a plan a canal Panama"));
+        assertFalse(App.isPalindrome("Able , was I saw eLba"));
+        assertFalse(App.isPalindrome("hello"));
+        assertFalse(App.isPalindrome("not a palindrome"));
     }
 }
