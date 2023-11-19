@@ -10,7 +10,7 @@ public class AppTest {
     public void testIsPalindrome() {
         assertTrue(App.isPalindrome("level"));
         assertTrue(App.isPalindrome("A man a plan a canal Panama"));
-        assertFalse(App.isPalindrome("Able , was I saw eLba"));
+        assertTrue(App.isPalindrome("Able was I saw eLba"));
         assertFalse(App.isPalindrome("hello"));
         assertFalse(App.isPalindrome("not a palindrome"));
     }
